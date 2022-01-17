@@ -1,0 +1,61 @@
+<%- include('include/header') %>
+<div class="row justify-content-center">
+  <div class="col-md-6 text-center mb-5">
+    <h2 class="heading-section">Welcome to Password Manager</h2>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-lg-10 col-md-12">
+    <div class="wrapper">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 mb-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div onclick="login()" class="dbox w-100 text-center">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-sign-in"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>Login</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="add()" class="dbox w-100 text-center">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-plus"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>Add Password</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div onclick="list()" class="dbox w-100 text-center">
+                <div
+                  class="icon d-flex align-items-center justify-content-center"
+                >
+                  <span class="fa fa-list"></span>
+                </div>
+                <div class="text">
+                  <p>
+                    <span>View Passwords</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('include/footer') %>

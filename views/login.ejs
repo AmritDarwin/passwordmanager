@@ -1,0 +1,62 @@
+<%- include('include/header') %>
+<div class="row justify-content-center">
+  <div class="col-lg-10 col-md-12">
+    <div class="wrapper">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-wrap">
+            <h3 class="mb-4 text-center">Login</h3>
+            <form
+              method="POST"
+            action="/validateLogin"
+              id="loginForm"
+              name="loginForm"
+              class="contactForm"
+            >
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="username"
+                      id="username"
+                      placeholder="Username"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      id="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <input
+                      type="submit"
+                      value="Login"
+                      class="btn btn-primary"
+                    />
+                  </div>
+                </div>
+              </div>
+            </form>
+            <p style="text-align: center; color: white;">New User?</p>
+            <div class="form-group text-center">
+              <button type="button" onclick="register()" class="btn btn-primary">
+                REGISTER
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('include/footer') %>
