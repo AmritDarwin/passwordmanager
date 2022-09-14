@@ -13,7 +13,7 @@ exports.validateLogin = (req, res) => {
                 type: 'error',
                 message: 'No user Found!'
             };
-            res.json(response);
+            res.json(response); 
         }
         if (row[0].password !== password) {
             const response = {
